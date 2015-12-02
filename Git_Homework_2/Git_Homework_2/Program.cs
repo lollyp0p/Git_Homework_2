@@ -27,6 +27,16 @@ namespace Git_Homework_2
                     Console.WriteLine("\n x * y = " + z);
 
 
+                    if (z <= 0) Console.WriteLine(" Sorry, no asterisks!");
+                    else
+                    {
+                        for (int asterisks = 1; asterisks <= z; asterisks++)
+                        {
+                            Console.WriteLine(" " + asterisks + ". *");
+                        }
+                    }
+
+
                 }
                 catch (Exception error)
                 {
