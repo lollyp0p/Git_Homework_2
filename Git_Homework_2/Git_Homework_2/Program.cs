@@ -9,7 +9,9 @@ namespace Git_Homework_2
     {
         static void Main(string[] args)
         {
-            int x, y, counter = 0, w;
+
+            int x, y, counter = 0,z, w;
+
 
             for (int i = 0; i == counter; i++)
             {
@@ -21,9 +23,25 @@ namespace Git_Homework_2
                     Console.Write(" Enter please second number: ");
                     y = Int32.Parse(Console.ReadLine());
 
+
                     w = x + y;
 
                     Console.WriteLine("\n x + y = " + w);
+
+                    z = x * y;
+
+                    Console.WriteLine("\n x * y = " + z);
+
+
+                    if (z <= 0) Console.WriteLine(" Sorry, no asterisks!");
+                    else
+                    {
+                        for (int asterisks = 1; asterisks <= z; asterisks++)
+                        {
+                            Console.WriteLine(" " + asterisks + ". *");
+                        }
+                    }
+
 
 
                 }
